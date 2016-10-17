@@ -3,8 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	primes := [6]int{2, 3, 5, 7, 11, 13}
+    arreg := [5]int{1,2,3,4,5}
+	slice := arreg[:]
+    fmt.Println("Slice :" , slice)
+    fmt.Println("Numeroo de elementos en slice : " , len(slice) )
+    fmt.Println("Capacidad de slice : ", cap(slice))
+    fmt.Printf("\nDireccion de arreglo = %p \nDireccion de slice = %p", &arreg, &slice[0])
 
-	var s []int = primes[1:4]
-	fmt.Println(s)
+    fmt.Println("\n")
+    slice = append(slice, 117)
+
+    fmt.Println("Slice :" , slice)
+    fmt.Println("Numeroo de elementos en slice : " , len(slice) )
+    fmt.Println("Capacidad de slice : ", cap(slice))
+    fmt.Printf("\nDireccion de arreglo = %p \nDireccion de slice = %p", &arreg, &slice[0])
+
 }
