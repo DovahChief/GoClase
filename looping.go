@@ -2,25 +2,30 @@ package main
 
 import "fmt"
 
-func main()  {
-    i := 1
-    num := []int {23,25,32,56,78}
+func main() {
+	i := 1
+	num := []int{23, 25, 32, 56, 78}
 
-    for i < 5{
-        fmt.Printf("ciclo 1 :%d \n", i)
-        i++
-    } // primer ejemplo de ciclo
+	for i < 5 {
+		fmt.Printf("ciclo 1 :%d \n", i)
+		i++
+	} // primer ejemplo de ciclo
 
-    fmt.Print("\n----------\n\n")
+	fmt.Print("\n----------\n\n")
 
-    for n := range num{
-        fmt.Printf("ciclo 2 : %d \n", n)
-    }// segundo ejemplo de ciclo
+	for n := range num {
+		fmt.Printf("ciclo 2 : %d \n", n)
+	} // segundo ejemplo de ciclo
 
-    fmt.Print("\n----------\n\n")
+	fmt.Print("\n----------\n\n")
 
-    for x , n := range num{
-        fmt.Printf("ciclo 3 : [%d] :  %d \n", x , n)
-    }// segundo ejemplo de ciclo
-
-}// funcion main
+	for x, n := range num {
+		fmt.Printf("ciclo 3 : [%d] :  %d \n", x, n)
+	} // segundo ejemplo de ciclo
+	//
+	fmt.Print("\n----------\n\n")
+	a := [6]int{2, 3, 5, 7, 11, 13}
+	for _, n := range a {
+		fmt.Print(n, " ")
+	}
+} // funcion main
