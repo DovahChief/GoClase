@@ -12,9 +12,9 @@ func conv(x int) string {
 	return fmt.Sprintf("%v", x)
 }
 
-func creaCad(c convert, x int) {
+func creaCad(fun convert, x int) {
 	fmt.Println("hey soy la funcion que recibe funciones")
-	fmt.Printf("mensaje : %s ", c(x))
+	fmt.Printf("mensaje : %s ", fun(x))
 }
 
 func main() {
