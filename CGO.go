@@ -9,12 +9,12 @@ package main
 //     return a+b;
 // }
 import "C"
- 
+
 import "fmt"
 
-func main()  {
-    C.taco()
-    x := C.sum(1.2 , 3.5)
-    fmt.Println("no se nada de suma soy GOpher")
-    fmt.Println(x)
+func main() {
+	C.taco()
+	x := C.sum(1.2, 3.5)
+	fmt.Println("no se nada de suma soy GOpher")
+	fmt.Println(x)
 }
